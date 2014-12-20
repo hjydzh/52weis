@@ -2,42 +2,22 @@
 
 namespace myblog;
 
-/**
- *
- * @author junyu
- *        
- */
-class MyBlog {
+class Category {
 	
 	/*
 	 * 主键
 	 */
-	private $blog_id;
+	private $id;
 	
 	/*
-	 * 文章标题
+	 * 目录名
 	 */
-	private $title;
+	private $name;
 	
 	/*
-	 * 作者
+	 * 父目录id
 	 */
-	private $author;
-	
-	/*
-	 * 正文
-	 */
-	private $content;
-	
-	/*
-	 * 发表时间
-	 */
-	private $time;
-	
-	/*
-	 * 浏览量
-	 */
-	private $view_num;
+	private $parent_id;
 	
 	/*
 	 * 权重
@@ -51,6 +31,7 @@ class MyBlog {
 			return null;
 		}
 	}
+	
 	private function __set($property_name, $value) {
 		$this->$property_name = $value;
 	}
