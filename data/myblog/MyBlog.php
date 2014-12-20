@@ -32,7 +32,7 @@ class MyBlog {
 	/*
 	 * 发表时间
 	 */
-	private $time;
+	private $create_time;
 	
 	/*
 	 * 浏览量
@@ -44,14 +44,14 @@ class MyBlog {
 	 */
 	private $weight;
 	
-	private function __get($property_name) {
+	public function __get($property_name) {
 		if (isset ( $this->$property_name )) {
 			return ($this->$property_name);
 		} else {
 			return null;
 		}
 	}
-	private function __set($property_name, $value) {
+	public function __set($property_name, $value) {
 		$this->$property_name = $value;
 	}
 }
