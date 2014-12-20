@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*框架-start*/
+
+/*背景白色*/
+.white
+{
+background-color:white;
+}
+
+/*边框灰色*/
+.border
+{
+border:3px solid #D7D7D7;
+}
+
+#body
+{
+position:relative;
+top:80px;;		/*是为了防止被顶栏遮盖*/
+margin-left: auto;
+margin-right: auto;
+padding:0;
+text-align:center;
+width:80%;	
+}
+
+/*两栏样式，左栏*/
+#main
+{
+margin-left: -300px;	
+width:100%;
+float:left;
+}
+
+/*左栏内容右移动*/
+#box
+{
+margin-left:300px;		
+}
+
+/*两栏样式，右栏*/
+#right
+{
+float:right;
+width:300px;
+}
+
+/*框架-end*/
+
+
+/*主体内容-start*/
+
+/*导航栏*/
+
+#nav
+{
+position:relative;
+display:block;
+margin-bottom:20px;
+padding:5px 10px;
+
+}
+.nav-item
+{
+float:left;
+padding-right:20px;
+}
+
+/*文章主体*/
+.article
+{
+padding:50px;
+}
+
+.article dd
+{
+padding:20px;
+}
+
+/*文章信息*/
+.article-info
+{
+display:block;
+color:#979797;
+border-bottom:1px solid #F2F2F2;
+}
+
+.article-info li
+{
+float:left;	
+padding:5px 10px;
+}
+
+/*文章内容*/
+.article-content
+{
+line-height:30px;
+font-size:16px;
+border-bottom:1px solid #F2F2F2;
+}
+
+/*上篇下篇样式*/
+.next-chapter
+{
+text-align:left;
+margin:0px;
+padding:0px 0px 10px 20px;
+}
+
+/*主体内容-end*/
+
+
+/*侧边栏展示-start*/
+
+
+#right dl
+{
+margin: 0 10px;
+text-align:left;
+padding:20px 8px;
+}
+#right dl dt
+{
+font-weight:700;
+}
+
+#right dl dd
+{
+padding:5px 0;
+border-bottom:1px solid #F2F2F2;
+}
+
+/*侧边栏展示-end*/
+
+
+
+
+
+
+
+
+
+

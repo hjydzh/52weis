@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gateway xmlns="http://www.zend.com/gateway/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <response default="true" type="json">
+      <header name="Access-Control-Allow-Origin" value="*"/>
+      <header name="no-cache" value="true"/>
+   </response>
+</gateway>

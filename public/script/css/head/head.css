@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+/*---------------------全局设置---------------------------start*/
+
+*
+{
+margin:0; 
+padding:0; 
+list-style:none;
+}
+
+body
+{
+font: 14px Consolas,微软雅黑;
+color:#666666;
+background-color:#F5F5F5;
+}
+
+div
+{
+margin-bottom:20px;	
+}
+
+/*设置a标签颜色和无下划线*/
+a
+{
+text-decoration:none;
+color:#666666;
+}
+
+/*设置a标签悬停颜色*/
+a:hover
+{
+color:#8B0000;
+}
+
+
+/*---------------------全局设置---------------------------end*/
+
+
+#navigation
+{
+left:0;
+top:0;
+z-index:999;  /*置于顶层*/
+position:fixed;   /*固定*/
+border-left:1px solid #d4d4d4;
+border-right:1px solid #d4d4d4;
+border-bottom:1px solid #d4d4d4;
+background-color:white;
+width:100%;
+}
+
+
+/*导航栏内列表*/
+#nav-list
+{
+list-style:none;
+position:relative;
+text-align:center;
+padding-right:20px;
+}
+
+/*导航栏内具体列*/
+#nav-list li 
+{
+font-size:18px;
+padding-right:15px;
+padding-left:15px;
+padding-bottom:30px;
+padding-top:30px;
+float:right;
+}
+
+
