@@ -4,15 +4,16 @@
 <link rel="shortcut icon" href="../script/img/52.ico" type="image/x-icon" />
 <meta charset="utf-8">
 <title>52weis</title>
-<link href="../script/css/body/home.css" rel="stylesheet" type="text/css"/>
-<script  src="../script/js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="../script/js/pictureAutoMove.js"></script>
+<link href="/52weiss/public/script/css/body/home.css" rel="stylesheet" type="text/css"/>
+<script  src="/52weiss/public/script/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="/52weiss/public/script/js/pictureAutoMove.js"></script>
  
 </head>
 
 <body>
 <?php 
-require_once '../head/head.php';
+require_once '/52weiss/public/head/head.php';
+require_once '/52weiss/src/control/PortalController.php';
 ?>
 <div id="root">
 	<div></div>
@@ -60,48 +61,27 @@ require_once '../head/head.php';
                         <dt>你有多想做，你的自制力就有多强！</dt>
                         <dt>猿声今何在：长臂猿守护者的故事</dt>
                     </dl>
-                </div>       	 
-            	<div class="article">
+                </div>  
+                <?php 
+foreach($blogs as $blog){
+	$html = '<div class="article">
                 	<h2 class="title">
-                    	<a href="article.php">
-                    		手机也在京东玩众筹，看得了当下，没有看到未来？
+                    	<a href="/52weiss/public/portal/article.php?id=%d">
+							%s
                         </a>
                     </h2>
+					<div class="info">%s&nbsp;&nbsp;%s&nbsp;&nbsp;</div>
                     <div class="content">
-                    哇，网站真的是荒草丛生了。 如果开学初那篇匆匆的状态不算在内，已经两个月没更文了。 两个月，听上去其实也不长。但是如果要经历一些事情，也会让人感觉仿佛很久很久。 暑假玩的很疯，开学后，朋友都走了，我也开始了忙碌的研一生活。 本来以为有时间会把这几个月的生活补写出来，但是回头看却觉得并无必要。那些moments发在社交网络上就够了，网站并不是微博或朋友圈。 研究生期间科研任务很多，第一年课也很多，压力很大，...	
-                    	<a class="readMore" href="">&nbsp;&nbsp;阅读全文</a>
+                    %s ...	
+                    	<a class="readMore" href="/52weiss/public/portal/article.php?id=%d">&nbsp;&nbsp;阅读全文</a>
                     </div> 
-				</div>  
-                
-                <div class="article">
-                	<h2 class="title">
-                    	毕业
-                    </h2>
-                    <div class="content">
-                   这回我真的是好久好久没碰电脑了，回学校参加毕业典礼没带电脑去，整整半个月过着山顶洞人的生活，回来看看网站上一次更新日期，有一种荒草丛生的感觉- -。 .
-                   		<a class="readMore" href="">阅读全文</a>
-                    </div> 
-				</div>
-                
-                <div class="article">
-                	<h2 class="title">
-                    	已录取
-                    </h2>
-                    <div class="content">
-                   昨天下午收到了拟录取的短信通知，考研这个话题到此才终于算是告一段落了，后面任务就是找导师了。 望自己能安心做几年学问，不辜负如今得到的这一切。 感谢各位一直以来的关心和祝福，清明节前我腿受了伤所以在家休养至今，一直无法自由的行走在这天地间，也没空上网回复评论，所以就在此一并感谢了！(好官腔) 本来想就写这么多吧，但是一看太短了，所以再补几句废话吧.. 人一旦忙起来，就根本停不下来啊，从决定考研开始到复.
-                    	<a class="readMore" href="">阅读全文</a>
-                    </div> 
-				</div>
-                
-                <div class="article">
-                	<h2 class="title">
-                    	复试结束~
-                    </h2>
-                    <div class="content">
-                   前两天去参加复试的, 现在结果还没有出来, 闲来无事更一篇博~ 昨天上午面试的时候我有提到自己的网站, 不知道老师会不会来抽查, 如果老师来了, 一定要听完我...
-                   		<a class="readMore" href="">阅读全文</a>	
-                    </div> 
-				</div>      		
+				</div> ';
+	$pure_content = strip_tags($blog->content);
+	$content = mb_substr($pure_content, 0, 200);
+	$txt = vsprintf($html, array($blog->blog_id, $blog->title, $blog->author, $blog->create_time,$content, $blog->blog_id));
+	echo $txt;
+}
+                ?>     	 
         </div>
         
         <div id="rightBox">
@@ -130,19 +110,19 @@ var img2 = {};
 var img3 = {};
 var img4 = {};
 var img5 = {};
-img1["src"] = ("../script/img/1.jpg");
+img1["src"] = ("/52weiss/public/script/img/1.jpg");
 img1["href"] = ("1111");
 
-img2["src"] = ("../script/img/2.jpg");
+img2["src"] = ("/52weiss/public/script/img/2.jpg");
 img2["href"] = ("2222");
 
-img3["src"] = ("../script/img/3.jpg");
+img3["src"] = ("/52weiss/public/script/img/3.jpg");
 img3["href"] = ("3333");
 
-img4["src"] = ("../script/img/4.jpg");
+img4["src"] = ("/52weiss/public/script/img/4.jpg");
 img4["href"] = ("4444");
 
-img5["src"] = ("../script/img/5.jpg");
+img5["src"] = ("/52weiss/public/script/img/5.jpg");
 img5["href"] = ("3333");
 
 imgs[0] = img1;

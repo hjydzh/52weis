@@ -137,13 +137,23 @@ margin-bottom:10px;
 .title
 {
 float:left;	
-padding:20px;
+padding:5px 20px;
+}
+
+.info
+{
+font-size:12px;
+float:left;
+padding:0 20px;
+clear:left;
 }
 
 /*正文不与标题并排*/
 .content
 {
-clear:both;	
+padding:0 10px;
+clear:both;
+text-align:left;
 }
 
 .readMore

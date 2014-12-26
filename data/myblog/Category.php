@@ -24,7 +24,17 @@ class Category {
 	 */
 	private $weight;
 	
-	private function __get($property_name) {
+	/*
+	 * URL
+	 */
+	private $url;
+	
+	/*
+	 * 层级，首目录层级为1
+	 */
+	private $level;
+	
+	public function __get($property_name) {
 		if (isset ( $this->$property_name )) {
 			return ($this->$property_name);
 		} else {
@@ -32,7 +42,7 @@ class Category {
 		}
 	}
 	
-	private function __set($property_name, $value) {
+	public function __set($property_name, $value) {
 		$this->$property_name = $value;
 	}
 }

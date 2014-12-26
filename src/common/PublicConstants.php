@@ -22,7 +22,7 @@ class PublicConstants {
 	/*
 	 * 数据库用户密码
 	 */
-	public static $DATA_BASE_PASSWD = "a1387003884";
+	public static $DATA_BASE_PASSWD = "a13870093884";
 	
 }
 

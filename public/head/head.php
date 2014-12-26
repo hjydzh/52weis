@@ -1,23 +1,22 @@
-<link href="/52weis/public/script/css/head/head.css" rel="stylesheet" type="text/css"/>
+<link href="/52weiss/public/script/css/head/head.css" rel="stylesheet" type="text/css"/>
 <div id="navigation">	
 	<ul id="nav-list">
-    	<li>
-			<a style="position:relative;" href="" >
-           		关于我
-            </a>            
-		</li>
-		<li>
-			<a href="">实验室</a>
-		</li>
-		<li>
-			<a href="">开发手册</a>
-		</li>
-        <li>
-			<a href="">我的文章</a>
-		</li>
-        <li>
-			<a href="">首页</a>
-		</li>
+<?php 
+require_once '/52weiss/src/service/ArticleQueryService.php';
+use \service\ArticleQueryService;
+$service = new ArticleQueryService();
+$categorys = $service->queryCategory(1);
+foreach ($categorys as $c){
+	liCreate($c->name, $c->url);
+}
+function liCreate($name, $url){
+	echo "<li>";
+	echo '<a href="'.$url.'">';
+	echo $name;
+	echo "</a>";
+	echo "</li>";
+}
+	?>
 		<br style="clear: both"/>
     </ul>
 </div>

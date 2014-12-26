@@ -44,6 +44,16 @@ class MyBlog {
 	 */
 	private $weight;
 	
+	/*
+	 * 地址
+	 */
+	private $url;
+	
+	/*
+	 * 目录id
+	 */
+	private $category_id;
+	
 	public function __get($property_name) {
 		if (isset ( $this->$property_name )) {
 			return ($this->$property_name);
