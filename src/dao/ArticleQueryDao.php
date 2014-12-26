@@ -160,7 +160,33 @@ class ArticleQueryDao {
 		if ($stmt = mysqli_prepare($link, $query)) {
 	
 			/* bind parameters for markers */
-			mysqli_stmt_bind_param($stmt, $type, $par);
+		switch (count($par)){
+				case 1:
+					mysqli_stmt_bind_param($stmt, $type, $par[0]);
+					break;
+				case 2:
+					mysqli_stmt_bind_param($stmt, $type, $par[0], $par[1]);
+					break;
+				case 3:
+					mysqli_stmt_bind_param($stmt, $type, $par[0], $par[1], $par[2]);
+					break;
+				case 4:
+					mysqli_stmt_bind_param($stmt, $type, $par[0], $par[1], $par[2], $par[3]);
+					break;
+				case 5:
+					mysqli_stmt_bind_param($stmt, $type, $par[0], $par[1], $par[2], $par[3], $par[4]);
+					break;
+				case 6:
+					mysqli_stmt_bind_param($stmt, $type, $par[0], $par[1], $par[2], $par[3], $par[4], $par[5]);
+					break;
+				case 7:
+					mysqli_stmt_bind_param($stmt, $type, $par[0], $par[1], $par[2], $par[3], $par[4], $par[5], $par[6]);
+					break;
+				default:
+					mysqli_stmt_close($stmt);
+					mysqli_close($link);
+					return ;
+			}
 	
 			/* execute query */
 			mysqli_stmt_execute($stmt);
