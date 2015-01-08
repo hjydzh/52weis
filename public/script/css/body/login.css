@@ -1,0 +1,68 @@
+
+
+body
+{
+position:relative;
+margin-top:100px;
+margin-left:170px;
+}
+
+.left
+{
+float:left;
+}
+
+.left img
+{
+width:340px;;
+height:400px;
+padding-right:250px;
+}
+
+.right
+{
+float:left;
+margin:50px 0;
+padding:0;
+text-align:center;
+border: 1px solid #afd0f1;
+width:330px;
+}
+
+.right div
+{
+color: #66CCFF;
+font-size:18px;
+font-family: "Microsoft YaHei","微软雅黑","黑体";
+font-weight:600;
+padding:15px 25px;
+height:30px;	
+}
+
+.right input
+{
+width:200px;
+height:35px;	
+}
+.right a
+{
+margin:10px;	
+}
+
+.submit input
+{
+width:100px;
+cursor:pointer;	
+text-shadow: 1px 1px 0 #cf7000;
+background-color: #ffb000;
+border: solid 1px #e77c00;
+color:white;
+font-size: 16px;
+font-family: "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+font-weight: bold;
+cursor: pointer;
+text-align: center;
+letter-spacing: 0.4em;
+box-shadow: 0 1px 0 rgba(95,50,0,0.7);
+border-radius: 3px;
+}

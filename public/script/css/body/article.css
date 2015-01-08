@@ -18,11 +18,11 @@ border:3px solid #D7D7D7;
 #body
 {
 position:relative;
-top:80px;;		/*是为了防止被顶栏遮盖*/
 margin-left: auto;
 margin-right: auto;
 padding:0;
 text-align:center;
+top :0px;
 width:80%;	
 }
 

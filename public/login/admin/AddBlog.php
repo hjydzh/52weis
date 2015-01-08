@@ -31,7 +31,7 @@
 </script>
 </head>
 <body>
-	<form name="example" method="post" action="/52weiss/src/control/AddBlogController.php">
+	<form name="example" method="post" action="/addBlog.html">
 <select name="category_id">
 
 <?php 
@@ -44,12 +44,18 @@ foreach($list as $it){
 	echo '<option  value="'.$it->id.'">'.$it->name.'</option>';
 }
 ?>
-		
+
+		</select>
+		<select name="portal_area">
+			<option value="0">是否发布到首页</option>
+			<option value="1">首页大图右侧展示区</option>
+			<option value="2">首页推荐文章区</option>
+			<option value="0">不需要</option>
 		</select>
 		标题：<input type="text" id="title" name="title" ></input>
 		作者：<input type="text" name="author"/>
+		文章地址(转载请填上)：<input type="text" name="url"/>
 		<textarea id="editor_id" name="content" style="width:700px;height:300px;">
-			&lt;strong&gt;HTML内容&lt;/strong&gt;
 </textarea>
 <input type="submit"  value="提交"/>
 	</form>
@@ -58,7 +64,7 @@ foreach($list as $it){
 
 <script>
 		
-	</script>
+</script>
 
 
 </html>

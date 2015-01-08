@@ -3,6 +3,13 @@
 
 /*网页框架---------------------------------------------start*/
 
+#root div
+{
+margin-bottom:20px;	
+	
+}
+
+
 /*设置主体栏单列格式*/
 #root
 {
@@ -40,10 +47,11 @@ margin-bottom:20px;
 /*滚动提示语*/
 #freshMessage
 {
-margin-top:80px;
+margin-top:-20px;	
 padding:10px;
 background-color:#FFF;
 height:15px;
+margin-bottom:10px !important;
 }
 
 /*大图片展示区*/
@@ -100,8 +108,6 @@ font-size:14px;
 #wrapper
 {
 position:relative;
- 
- 
 }
 
 #main
@@ -126,6 +132,7 @@ padding:40px;
 /*文章主体*/
 .article
 {
+display:none;
 margin-left:300px;
 background-color:#FFF;
 padding:40px;
@@ -167,11 +174,42 @@ float:right;
 width:300px;
 }
 
-.right_area
+/*侧边栏展示-start*/
+
+
+#rightBox dl
 {
-margin:0;
-padding:15px;
-margin-left:5px;
-background-color:#FFF;	
+margin: 0 10px;
+text-align:left;
+padding:20px 8px;
+}
+#rightBox dl dt
+{
+font-weight:700;
 }
 
+#rightBox dl dd
+{
+padding:5px 0;
+border-bottom:1px solid #F2F2F2;
+}
+
+/*侧边栏展示-end*/
+
+/*加载更多*/
+#more
+{
+margin-left:300px;
+text-align:center;
+font-size:16px;
+margin-top:20px;
+}
+
+#more a
+{
+border:1px solid #8B0000;
+padding: 20px 60px;
+color:#8B0000;
+border-radius:5px;
+display:inline-block;
+}

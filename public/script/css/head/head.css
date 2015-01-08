@@ -9,16 +9,18 @@ padding:0;
 list-style:none;
 }
 
+/*背景白色*/
+.white
+{
+background-color:white;
+}
+
 body
 {
+overflow-x: hidden;
 font: 14px Consolas,微软雅黑;
 color:#666666;
 background-color:#F5F5F5;
-}
-
-div
-{
-margin-bottom:20px;	
 }
 
 /*设置a标签颜色和无下划线*/
@@ -43,7 +45,7 @@ color:#8B0000;
 left:0;
 top:0;
 z-index:999;  /*置于顶层*/
-position:fixed;   /*固定*/
+position:relative;   
 border-left:1px solid #d4d4d4;
 border-right:1px solid #d4d4d4;
 border-bottom:1px solid #d4d4d4;
@@ -70,6 +72,32 @@ padding-left:15px;
 padding-bottom:30px;
 padding-top:30px;
 float:right;
+}
+
+.head-nav-item{
+position:absolute;
+text-align:left;
+display:none;
+}
+
+.head-nav-item li
+{
+background-color:#FFFFFF;
+width:100%;
+float:right;
+clear:both;
+padding:0px !important;
+}
+
+/*页面滚动至顶部*/
+#htmlTop
+{
+position:fixed;
+cursor:pointer;
+width:60px;
+heigh:60px;	
+right: 20px;
+bottom:40px;
 }
 
 

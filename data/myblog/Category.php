@@ -30,6 +30,11 @@ class Category {
 	private $url;
 	
 	/*
+	 * 孩子目录
+	 */
+	private $children;
+	
+	/*
 	 * 层级，首目录层级为1
 	 */
 	private $level;
