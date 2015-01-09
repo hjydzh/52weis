@@ -9,6 +9,16 @@
 </head>
 
 <body>
+
+<div style="position:fixed; right:-50px; bottom:100px;color:#C4B296;font-size:12px;z-index:999">
+	<div style="border:1px solid #EB8E88; width:170px; min-height:40px; padding:5px;float:left; border-radius:5px;z-index:200; background-color:#FFFFF0;opacity:0.7;">
+		<span id="words_show" style="line-height:20px;color:black"></span>
+		<div style="text-align:right;cursor: pointer;" onclick="menu()">|menu|</div>
+		<div id="xiaoWeiWords" style="display:none;" >欢迎来到我的小站<br>我是小薇薇，很高兴认识你哟，不懂的可以问我的呢</div>
+	</div>
+	<img src="/52weis/public/script/img/weiwei.gif" style="position:relative;left:-40px; z-index:-1"/>
+</div>
+
 <?php 
 require_once get_include_path().'/52weis/public/head/head.php';
 require_once get_include_path().'/52weis/src/common/HtmlTemplate.php';
@@ -222,6 +232,66 @@ function showBlogs(){
 	var articles = $(".article:hidden");
 	var showArticles = articles.slice(0,show_num);
 	showArticles.show();
+}
+
+/////weiwei////
+xiaoWeiSay();
+function menu(){
+	var words = '菜单还没有准备好呢<br>嘻嘻';
+	preSay(words);
+}
+
+var wordsList = new Array(
+"很无聊呢，需要做些什么吗",
+"我喜欢看《火影忍者》，你呢？<br>推荐你去看看哟",
+"我的网站是不是很简朴啊<br>呜呜~~~~(>_<)~~~~<br>技术不行呢,纯手工打造的呢,千万不能嫌弃啊",
+"有什么能帮到你的吗<br>告诉我好么",
+"今天我心情很好哟，开心思密达，嘻嘻"
+)
+
+
+var words_index = 0;
+
+var wordListInterval = setInterval("loopSay()", 10*1000);
+
+
+function loopSay(){
+	if(words_index == wordsList.length){
+		words_index = 0;
+	}
+	preSay(wordsList[words_index])
+	words_index++
+}
+
+var xiaoWeiInterval;
+
+function xiaoWeiSay(){
+
+	xiaoWeiInterval =  setInterval("xiaoWeiShow()",100);
+	
+}
+
+function preSay(words){
+		$("#words_show").html("");
+		$("#xiaoWeiWords").html(words);
+		xiaoWeiSay();
+}
+
+function xiaoWeiShow(){
+	var text = $("#xiaoWeiWords").html();
+	var words = $("#words_show").html();
+	var length = words.length;
+	var position = length;	
+	if(position > text.length - 1){
+		clearInterval(xiaoWeiInterval);
+	}
+	var char = text[position];
+	if("<" == char){
+		var index = text.substring(position).indexOf(">");
+		position = index+ position;
+	}
+	var screen = $("#words_show");
+	screen.html(text.substring(0, position+1));
 }
 
 </script>
