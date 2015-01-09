@@ -1,10 +1,10 @@
 <?php
 
 namespace control;
-require_once '/52weiss/src/service/ArticleQueryService.php';
+require_once get_include_path().'/52weis/src/service/ArticleQueryService.php';
 use \service\ArticleQueryService;
 use \Exception;
-require_once '/52weiss/src/common/PublicConstants.php';
+require_once get_include_path().'/52weis/src/common/PublicConstants.php';
 use \common\PublicConstants;
 class ArticleControlle {
 	
@@ -34,7 +34,7 @@ class ArticleControlle {
 		$first_category = $categorys[0];	//一级目录
 		$second_category = $categorys[1];	//二级目录
 		$hotBlogs = self::queryHotBlogs($service, self::$HOT_BLOG_NUM);
-		require_once PublicConstants::$ARTICLE_PATH;
+		require_once get_include_path().PublicConstants::$ARTICLE_PATH;
 	}
 	
 	/**

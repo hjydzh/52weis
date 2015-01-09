@@ -19,14 +19,14 @@ class LoginControlle {
 			$_SESSION["count"] = $count;
 			if($count > 1){
 				$_SESSION["isLogin"] = true;
-				require_once '/52weiss/public/login/admin/AddBlog.php';
+				require_once get_include_path().'/52weis/public/login/admin/AddBlog.php';
 				return;
 			}
 		}
 		if($count > 0){
 			$error = '用户名或者密码错误';
 		}
-		require_once '/52weiss/public/login/admin/login.php';
+		require_once get_include_path().'/52weis/public/login/admin/login.php';
 		
 	}
 }

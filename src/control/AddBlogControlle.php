@@ -1,9 +1,9 @@
 <?php
 
 namespace control;
-require_once '/52weiss/src/service/ArticleQueryService.php';
+require_once get_include_path().'/52weis/src/service/ArticleQueryService.php';
 use \service\ArticleQueryService;
-require_once '/52weiss/data/myblog/MyBlog.php';
+require_once get_include_path().'/52weis/data/myblog/MyBlog.php';
 use \myblog\MyBlog;
 class AddBlogControlle {
 	
@@ -29,7 +29,7 @@ class AddBlogControlle {
 		$blog->category_id = $category_id;
 		if(empty($title)||empty($content)||empty($category_id)){
 			echo '标题，内容，目录均不能为空';
-			require_once '/52weiss/public/login/admin/AddBlog.php';
+			require_once get_include_path().'/52weis/public/login/admin/AddBlog.php';
 			return;
 		}
 		$service = new ArticleQueryService();
@@ -39,7 +39,7 @@ class AddBlogControlle {
 		}
 		echo '新增成功';
 		unset($_POST['content']);
-		require_once '/52weiss/public/login/admin/AddBlog.php';
+		require_once get_include_path().'/52weis/public/login/admin/AddBlog.php';
 		return;
 	}
 }

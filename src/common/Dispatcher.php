@@ -37,7 +37,7 @@ class Dispatcher {
 		$classPath = $urlInfo[self::$CLASS_PATH];
 		$className = self::$CONTROL_PATH.$urlInfo[self::$CLASS_NAME];
 		$methodName = $urlInfo[self::$METHOD_NAME];
-		require_once $classPath;
+		require_once get_include_path().$classPath;
 		$class = new \ReflectionClass ($className); // 建立 Person这个类的反射类
 		$instance = $class->newInstanceArgs (); // 相当于实例化Person 类
 		$ec = $class->getmethod ( $methodName ); // 获取Person 类中的getName方法

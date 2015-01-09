@@ -10,8 +10,8 @@
 
 <body>
 <?php 
-require_once '/52weiss/public/head/head.php';
-require_once '/52weiss/src/common/HtmlTemplate.php';
+require_once get_include_path().'/52weis/public/head/head.php';
+require_once get_include_path().'/52weis/src/common/HtmlTemplate.php';
 use \common\HtmlTemplate;
 
 /**
@@ -163,7 +163,7 @@ newBlogs($newBlogs, $template);
 </div>
 <div id="footer">
 <?php 
-require_once '/52weiss/public/head/footer.php';
+require_once get_include_path().'/52weis/public/head/footer.php';
 ?>
 </div>
 

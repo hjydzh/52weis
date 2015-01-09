@@ -2,11 +2,11 @@
 
 namespace dao;
 
-require_once '/52weiss/data/myblog/MyBlog.php';
-require_once '/52weiss/data/myblog/Category.php';
-require_once '/52weiss/src/common/PublicConstants.php';
-require_once '/52weiss/src/common/SqlConstants.php';
-require_once '/52weiss/src/common/DbFactory.php';
+require_once get_include_path().'/52weis/data/myblog/MyBlog.php';
+require_once get_include_path().'/52weis/data/myblog/Category.php';
+require_once get_include_path().'/52weis/src/common/PublicConstants.php';
+require_once get_include_path().'/52weis/src/common/SqlConstants.php';
+require_once get_include_path().'/52weis/src/common/DbFactory.php';
 use \common\DbFactory;
 use \common\PublicConstants;
 use \myblog\MyBlog;

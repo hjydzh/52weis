@@ -1,9 +1,9 @@
 <?php
 namespace control;
-require_once '/52weiss/src/service/ArticleQueryService.php';
+require_once get_include_path().'/52weis/src/service/ArticleQueryService.php';
 use \service\ArticleQueryService;
-require_once '/52weiss/data/myblog/MyBlog.php';
-require_once '/52weiss/src/common/PublicConstants.php';
+require_once get_include_path().'/52weis/data/myblog/MyBlog.php';
+require_once get_include_path().'/52weis/src/common/PublicConstants.php';
 use \common\PublicConstants;
 use \Exception;
 class PortalControlle {
@@ -36,7 +36,7 @@ class PortalControlle {
 		$newBlogs = self::getNewBlogs($service, self::$NEW_BLOG_NUM);
 		$rightBlogs = self::rightBlogs($service, self::$RIGHT_BLOG_NUM);
 		$recomBlogs = self::queryRecomBlog($service, self::$RECOMMEND_BLOG_NUM);
-		require_once PublicConstants::$PORTAL_PATH;
+		require_once get_include_path().PublicConstants::$PORTAL_PATH;
 	}
 	
 	/**

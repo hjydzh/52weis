@@ -35,7 +35,7 @@
 <select name="category_id">
 
 <?php 
-require_once '/52weiss/src/service/ArticleQueryService.php';
+require_once get_include_path().'/52weis/src/service/ArticleQueryService.php';
 use \service\ArticleQueryService;
 $service = new ArticleQueryService();
 $list = $service->queryCategory(2);

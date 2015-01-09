@@ -1,11 +1,11 @@
 <?php
 
 namespace control;
-require_once '/52weiss/src/service/ArticleQueryService.php';
+require_once get_include_path().'/52weis/src/service/ArticleQueryService.php';
 use \service\ArticleQueryService;
 use \Exception;
-require_once '/52weiss/data/myblog/MyBlog.php';
-require_once '/52weiss/src/common/PublicConstants.php';
+require_once get_include_path().'/52weis/data/myblog/MyBlog.php';
+require_once get_include_path().'/52weis/src/common/PublicConstants.php';
 use \common\PublicConstants;
 class BlogListControlle {
 	
@@ -41,7 +41,7 @@ class BlogListControlle {
 			//当返回的数量小于一页的数量，说明已经是最后一页了，置为true，说明最后一页
 			$last_page = true;
 		}
-		require_once PublicConstants::$BLOG_LIST_PATH;
+		require_once get_include_path().PublicConstants::$BLOG_LIST_PATH;
 	}
 	
 	private function getEndIndex($page_index){

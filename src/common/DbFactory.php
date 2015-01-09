@@ -2,7 +2,7 @@
 
 namespace common;
 
-require_once '/52weiss/src/common/PublicConstants.php';
+require_once get_include_path().'/52weis/src/common/PublicConstants.php';
 use \common\PublicConstants;
 
 class DbFactory {

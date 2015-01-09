@@ -27,9 +27,9 @@ function topHtml(){
 <?php 
 session_start();
 
-require_once '/52weiss/src/service/ArticleQueryService.php';
+require_once get_include_path().'/52weis/src/service/ArticleQueryService.php';
 use \service\ArticleQueryService;
-require_once '/52weiss/src/common/PublicConstants.php';
+require_once get_include_path().'/52weis/src/common/PublicConstants.php';
 use \common\PublicConstants;
 if(isset($_SESSION['categorys'])){
 	$categorys = unserialize($_SESSION['categorys']);

@@ -1,8 +1,8 @@
 <?php
 
 namespace service;
-require_once '/52weiss/src/dao/ArticleQueryDao.php';
-require_once '/52weiss/src/common/PublicConstants.php';
+require_once get_include_path().'/52weis/src/dao/ArticleQueryDao.php';
+require_once get_include_path().'/52weis/src/common/PublicConstants.php';
 use \dao\ArticleQueryDao;
 use \common\PublicConstants;
 

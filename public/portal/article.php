@@ -9,7 +9,7 @@
 
 <body>
 <?php
-require_once '/52weiss/public/head/head.php';
+require_once get_include_path().'/52weis/public/head/head.php';
 ?>
 	<div id="body">
 		<ul id="nav">
@@ -86,7 +86,7 @@ foreach($newBlogs as $blog){
 	</div>
 <div id="footer">
 <?php 
-require_once '/52weiss/public/head/footer.php';
+require_once get_include_path().'/52weis/public/head/footer.php';
 ?>
 </div>
 </body>

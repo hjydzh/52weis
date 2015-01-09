@@ -1,5 +1,5 @@
 <?php 
-require_once '/52weiss/src/common/Dispatcher.php';
+require_once get_include_path().'/52weis/src/common/Dispatcher.php';
 use \common\Dispatcher;
 
 $url =  $_SERVER['REQUEST_URI'];
@@ -13,12 +13,12 @@ if(empty($pathArray)){
 $pagePath = $pathArray[0];
 
 if("/denglu" == $pagePath){
-	require_once '/52weiss/public/login/admin/login.php';
+	require_once get_include_path().'/52weis/public/login/admin/login.php';
 	return;
 }
 
 if("/about" == $pagePath){
-	require_once '/52weiss/public/portal/about.php';
+	require_once get_include_path().'/52weis/public/portal/about.php';
 	return;
 }
 
