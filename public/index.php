@@ -3,6 +3,9 @@ require_once get_include_path().'/52weis/src/common/Dispatcher.php';
 use \common\Dispatcher;
 
 $url =  $_SERVER['REQUEST_URI'];
+if('/' == $url){
+	$url = '/portal.html';
+}
 $parseList = parse_url($url);
 $path = $parseList['path'];
 //获得路径.html,.php等前部分
