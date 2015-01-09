@@ -179,7 +179,8 @@ width:300px;
 
 #rightBox dl
 {
-margin: 0 10px;
+margin-left:10px;
+margin-right:0px;
 text-align:left;
 padding:20px 8px;
 }
