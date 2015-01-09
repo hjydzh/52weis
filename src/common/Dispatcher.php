@@ -50,12 +50,12 @@ class Dispatcher {
 	}
 	private static function pathMap() {
 		$paths = array ();
-		$paths ["/error"] = "/52weiss/public/head/error.php";
-		$paths ["/list"] = "/52weiss/src/control/BlogListControlle.php";
-		$paths ["/articles"] = "/52weiss/src/control/ArticleControlle.php";
-		$paths ["/addBlog"] = "/52weiss/src/control/AddBlogControlle.php";
-		$paths ["/portal"] = "/52weiss/src/control/PortalControlle.php!main";
-		$paths ["/login"] = "/52weiss/src/control/LoginControlle.php";
+		$paths ["/error"] = "/52weis/public/head/error.php";
+		$paths ["/list"] = "/52weis/src/control/BlogListControlle.php";
+		$paths ["/articles"] = "/52weis/src/control/ArticleControlle.php";
+		$paths ["/addBlog"] = "/52weis/src/control/AddBlogControlle.php";
+		$paths ["/portal"] = "/52weis/src/control/PortalControlle.php!main";
+		$paths ["/login"] = "/52weis/src/control/LoginControlle.php";
 		return $paths;
 	}
 	private static function urlParse($url) {
