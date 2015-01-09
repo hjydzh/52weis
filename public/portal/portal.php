@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>52weis</title>
-<link href="/52weiss/public/script/css/body/home.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="/52weiss/public/script/js/pictureAutoMove.js"></script>
+<link href="/52weis/public/script/css/body/home.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/52weis/public/script/js/pictureAutoMove.js"></script>
  
 </head>
 
@@ -189,16 +189,16 @@ function bigPicInit()
 	var img2 = {};
 	var img3 = {};
 	var img4 = {};
-	img1["src"] = ("/52weiss/public/script/img/1.jpg");
+	img1["src"] = ("/52weis/public/script/img/1.jpg");
 	img1["href"] = ("/articles?id=4_12");
 
-	img2["src"] = ("/52weiss/public/script/img/2.jpg");
+	img2["src"] = ("/52weis/public/script/img/2.jpg");
 	img2["href"] = ("/articles.html?id=5_13");
 
-	img3["src"] = ("/52weiss/public/script/img/3.jpg");
+	img3["src"] = ("/52weis/public/script/img/3.jpg");
 	img3["href"] = ("/articles?id=1_13");
 
-	img4["src"] = ("/52weiss/public/script/img/4.jpg");
+	img4["src"] = ("/52weis/public/script/img/4.jpg");
 	img4["href"] = ("/articles.html?id=12_13");
 
 	imgs[0] = img1;

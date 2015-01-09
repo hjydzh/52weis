@@ -1,5 +1,5 @@
-<link href="/52weiss/public/script/css/head/head.css" rel="stylesheet" type="text/css"/>
-<script  src="/52weiss/public/script/js/jquery-1.9.1.js"></script>
+<link href="/52weis/public/script/css/head/head.css" rel="stylesheet" type="text/css"/>
+<script  src="/52weis/public/script/js/jquery-1.9.1.js"></script>
 <link rel="shortcut icon" href="../script/img/52.ico" type="image/x-icon" />
 <script type="text/javascript">
 function hide(obj){
@@ -106,5 +106,5 @@ function li($secCategory){
 		<br style="clear: both"/>
     </ul>
 </div>
-<img id="htmlTop" src="/52weiss/public/script/img/top.jpg" onclick="topHtml()";/>
+<img id="htmlTop" src="/52weis/public/script/img/top.jpg" onclick="topHtml()";/>
 <br style="clear: both"/>

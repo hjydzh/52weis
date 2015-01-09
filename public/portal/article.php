@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title><?php echo $blog->title; ?></title>
-<link href="/52weiss/public/script/css/body/article.css" rel="stylesheet"
+<link href="/52weis/public/script/css/body/article.css" rel="stylesheet"
 	type="text/css" />
 </head>
 

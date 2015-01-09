@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>新增博客</title>
-<script charset="utf-8" src="/52weiss/public/kindeditor/kindeditor.js"></script>
-<script charset="utf-8" src="/52weiss/public/kindeditor/lang/zh_CN.js"></script>
-<link rel="stylesheet" href="/52weiss/public/kindeditor/themes/default/default.css" />
-	<link rel="stylesheet" href="/52weiss/public/kindeditor/plugins/code/prettify.css" />
-	<script charset="utf-8" src="/52weiss/public/kindeditor/kindeditor.js"></script>
-	<script charset="utf-8" src="/52weiss/public/kindeditor/lang/zh_CN.js"></script>
-	<script charset="utf-8" src="/52weiss/public/kindeditor/plugins/code/prettify.js"></script>
+<script charset="utf-8" src="/52weis/public/kindeditor/kindeditor.js"></script>
+<script charset="utf-8" src="/52weis/public/kindeditor/lang/zh_CN.js"></script>
+<link rel="stylesheet" href="/52weis/public/kindeditor/themes/default/default.css" />
+	<link rel="stylesheet" href="/52weis/public/kindeditor/plugins/code/prettify.css" />
+	<script charset="utf-8" src="/52weis/public/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="/52weis/public/kindeditor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="/52weis/public/kindeditor/plugins/code/prettify.js"></script>
 <script>
         KindEditor.ready(function(K) {
                 window.editor = K.create('#editor_id');

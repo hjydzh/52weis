@@ -3,10 +3,10 @@
 <meta charset="UTF-8" />
 <title>登陆</title>
 </head>
-<link  rel="stylesheet" type="text/css" href="/52weiss/public/script/css/body/login.css"/>
+<link  rel="stylesheet" type="text/css" href="/52weis/public/script/css/body/login.css"/>
 <body>
 <div class="left">
-	<img src="/52weiss/public/script/img/login.jpg"/>
+	<img src="/52weis/public/script/img/login.jpg"/>
 </div>
 <form class="right" method="post" action="/login.html">
 	<div>登陆啦</div>

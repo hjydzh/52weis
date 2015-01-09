@@ -27,13 +27,13 @@ class PublicConstants {
 	/**
 	 * portal.php路径
 	 */
-	public static $PORTAL_PATH = "/52weiss/public/portal/portal.php";
+	public static $PORTAL_PATH = "/52weis/public/portal/portal.php";
 	
-	public static $ARTICLE_PATH = "/52weiss/public/portal/article.php";
+	public static $ARTICLE_PATH = "/52weis/public/portal/article.php";
 	
-	public static $BLOG_LIST_PATH = "/52weiss/public/portal/blogList.php";
+	public static $BLOG_LIST_PATH = "/52weis/public/portal/blogList.php";
 	
-	public static $ADD_BLOG_PATH = "/52weiss/public/login/admin/addBlog.php";
+	public static $ADD_BLOG_PATH = "/52weis/public/login/admin/addBlog.php";
 	
 	/**
 	 * 

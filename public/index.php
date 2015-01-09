@@ -8,7 +8,7 @@ $path = $parseList['path'];
 //获得路径.html,.php等前部分
 $pathArray = explode(".", $path);
 if(empty($pathArray)){
-	header('Location:/52weiss/error.html');
+	header('Location:/52weis/error.html');
 }
 $pagePath = $pathArray[0];
 
