@@ -1,6 +1,6 @@
 <link href="/52weis/public/script/css/head/head.css" rel="stylesheet" type="text/css"/>
 <script  src="/52weis/public/script/js/jquery-1.9.1.js"></script>
-<link rel="shortcut icon" href="../script/img/52.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/52weis/public/script/img/favicon.ico" type="image/x-icon">
 <script type="text/javascript">
 function hide(obj){
 	var li = $(obj);
