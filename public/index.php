@@ -15,6 +15,11 @@ if(empty($pathArray)){
 }
 $pagePath = $pathArray[0];
 
+if("/error" == $pagePath){
+	require_once get_include_path().'/52weis/public/head/error.php';
+	return;
+}
+
 if("/denglu" == $pagePath){
 	require_once get_include_path().'/52weis/public/login/admin/login.php';
 	return;
