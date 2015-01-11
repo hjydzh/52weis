@@ -13,11 +13,11 @@ require_once get_include_path().'/52weis/public/head/head.php';
 ?>
 	<div id="body">
 		<ul id="nav">
-			<li class="nav-item"><a href="/portal.html">首页</a></li>
+			<li class="nav-item"><a href="/">首页</a></li>
 			<li class="nav-item">></li>
-			<li class="nav-item"><a href="<?php echo $first_category->url.'?id='.$first_category->id."_".$first_category->level?>"><?php echo $first_category->name?></a></li>
+			<li class="nav-item"><a target="_blank" href="<?php echo $first_category->url.'?id='.$first_category->id."_".$first_category->level?>"><?php echo $first_category->name?></a></li>
 			<li class="nav-item">></li>
-			<li class="nav-item"><a href="<?php echo $second_category->url.'?id='.$second_category->id."_".$second_category->level?>"><?php echo $second_category->name?></a></li>
+			<li class="nav-item"><a target="_blank" href="<?php echo $second_category->url.'?id='.$second_category->id."_".$second_category->level?>"><?php echo $second_category->name?></a></li>
 			<br class="clear:both" />
 		</ul>
 		<div id="main">
@@ -33,7 +33,7 @@ require_once get_include_path().'/52weis/public/head/head.php';
 					</dt>
 					<dd>
 						<ul class="article-info">
-							<li><a href="<?php echo $blog->url;?>"><?php echo $blog->author; ?></a></li>
+							<li><a target="_blank" href="<?php echo $blog->url;?>"><?php echo $blog->author; ?></a></li>
 							<li>发布时间：<?php echo $blog->create_time; ?></li>
 							<li>阅读（<?php echo $blog->view_num; ?>）</li>
 							<li></li>
@@ -54,7 +54,7 @@ require_once get_include_path().'/52weis/public/head/head.php';
 foreach ($hotBlogs as $blog){
 	echo "<dd>";
 	//echo '<a href="'.$blog->url.'">';
-	echo "<a href=\"/articles?id=$blog->blog_id".'_'."$blog->category_id\">";
+	echo "<a target='_blank' href=\"/articles?id=$blog->blog_id".'_'."$blog->category_id\">";
 	echo $blog->title;
 	echo "</a>";
 	echo "</dd>";
@@ -66,7 +66,7 @@ foreach ($hotBlogs as $blog){
 <?php 
 foreach($newBlogs as $blog){
 	echo "<dd>";
-	echo '<a href="/articles.html?id='.$blog->blog_id.'_'.$blog->category_id.'">';
+	echo '<a target="_blank" href="/articles.html?id='.$blog->blog_id.'_'.$blog->category_id.'">';
 	echo $blog->title;
 	echo "</a>";
 	echo "</dd>";

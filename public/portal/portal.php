@@ -91,7 +91,7 @@ function hotBlogs($blogs, $template){
            <?php 
 $template = '
 			<li>
-				<a href="%s">
+				<a target="_blank" href="%s">
 				<h3>
 					%s
 				</h3>
@@ -113,14 +113,14 @@ rightAreaBlog($rightBlogs, $template);
 $template = '
 			<div class="article">
             	<h2 class="title">
-                	<a href="%s">
+                	<a target="_blank" href="%s">
 						%s
                     </a>
                 </h2>
 				<div class="info">%s&nbsp;&nbsp;%s&nbsp;&nbsp;</div>
                 <div class="content">
                  	%s ...	
-                	<a class="readMore" href="/articles.html?id=%s">&nbsp;&nbsp;阅读全文</a>
+                	<a target="_blank" class="readMore" href="/articles.html?id=%s">&nbsp;&nbsp;阅读全文</a>
                 </div> 
 			</div> '
 		;    

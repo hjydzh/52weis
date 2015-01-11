@@ -24,7 +24,7 @@ function nextPage($cate_id, $level, $index, $last_page){
 }
 
 function tagLi($href, $name){
-	echo "<li><a href=\"$href\">$name</a></li>";
+	echo "<li><a target='_blank' href=\"$href\">$name</a></li>";
 }
 ?>
 <body>
@@ -41,14 +41,14 @@ foreach($blogs as $blog){
 	$count += 1;
 	$html = '<div class="article" name="%s" style="display:%s">
                 	<h2 class="title">
-                    	<a href="/articles.html?id=%d_%d">
+                    	<a target="_blank" href="/articles.html?id=%d_%d">
 							%s
                         </a>
                     </h2>
 					<div class="info">%s&nbsp;&nbsp;%s&nbsp;&nbsp;</div>
                     <div class="content">
                     %s ...	
-                    	<a class="readMore" href="/articles.html?id=%d_%d">&nbsp;&nbsp;阅读全文</a>
+                    	<a target="_blank" class="readMore" href="/articles.html?id=%d_%d">&nbsp;&nbsp;阅读全文</a>
                     </div> 
 				</div> ';
 	$pure_content = strip_tags($blog->content);

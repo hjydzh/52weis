@@ -19,10 +19,11 @@ function topHtml(){
 }
 
 </script>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253553294'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1253553294' type='text/javascript'%3E%3C/script%3E"));</script>
 <div id="navigation">	
 	<ul id="nav-list">
 		<li onmouseover="show(this)" onmouseout="hide(this)">
-			<a href="/about.html" >关于我</a>
+			<a target="_blank" href="/about.html" >关于本站</a>
 		</li>
 <?php 
 session_start();
@@ -78,7 +79,7 @@ function getFirstCategorys(){
 
 function liCreate($firstCategory){
 	echo '<li onmouseover="show(this)" onmouseout="hide(this)">';
-	echo '<a href="'.$firstCategory->url.'?id='.$firstCategory->id.'_'.$firstCategory->level.'">';
+	echo '<a target="_blank" href="'.$firstCategory->url.'?id='.$firstCategory->id.'_'.$firstCategory->level.'">';
 	echo $firstCategory->name;
 	echo "</a>";
 	echo '<ul class="head-nav-item">';
@@ -93,7 +94,7 @@ function li($secCategory){
 	}
 	foreach ($secCategory as $cate){
 		echo '<li>';
-		echo '<a href="'.$cate->url.'?id='.$cate->id.'_'.$cate->level.'">';
+		echo '<a target="_blank" href="'.$cate->url.'?id='.$cate->id.'_'.$cate->level.'">';
 		echo $cate->name;
 		echo '</a>';
 		echo '</li>';
@@ -101,7 +102,7 @@ function li($secCategory){
 }
 	?>	
 		<li onmouseover="show(this)" onmouseout="hide(this)">
-			<a href="/portal.html" >首页</a>
+			<a target="_blank" href="/" >首页</a>
 		</li>
 		<br style="clear: both"/>
     </ul>
