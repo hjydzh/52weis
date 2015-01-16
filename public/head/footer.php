@@ -1,2 +1,2 @@
-<div style="text-align:center;padding-top:50px;padding-bottom:20px">Copyright ©2014-2017 52weis版权所有  <a target="_blank" href="http://www.miitbeian.gov.cn"> 苏ICP备14059658号 </a></div>
+<div style="text-align:center;padding-top:50px;padding-bottom:20px">Copyright ©2014-2017 52weis版权所有  <a target="_blank" href="http://www.miitbeian.gov.cn"> 苏ICP备14059658号 </a><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253553294'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1253553294%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></div>
  
