@@ -144,7 +144,7 @@ recommendBlogs($recomBlogs, $template)
 <?php 
 $template = '
 				<dd>
-					<a href="%s">%s</a>
+					<a target="_blank" href="%s">%s</a>
 				</dd>	
 		';
 hotBlogs($hotBlogs, $template);
