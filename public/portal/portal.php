@@ -155,7 +155,7 @@ hotBlogs($hotBlogs, $template);
 <?php 
 $template = '
 				<dd>
-					<a href="%s">%s</a>
+					<a target="_blank" href="%s">%s</a>
 				</dd>	
 		';
 newBlogs($newBlogs, $template);
