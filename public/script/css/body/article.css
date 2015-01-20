@@ -9,6 +9,16 @@
 background-color:white;
 }
 
+p
+{
+padding : 10px;	
+}
+
+img
+{
+max-width:700px;
+}
+
 /*边框灰色*/
 .border
 {
