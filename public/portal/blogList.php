@@ -24,7 +24,7 @@ function nextPage($cate_id, $level, $index, $last_page){
 }
 
 function tagLi($href, $name){
-	echo "<li><a target='_blank' href=\"$href\">$name</a></li>";
+	echo "<li><a href=\"$href\">$name</a></li>";
 }
 ?>
 <body>
