@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<meta property="wb:webmaster" content="a8beb340f9528e14" />
 <meta charset="utf-8">
 <title>52weis</title>
 <link href="/52weis/public/script/css/body/home.css" rel="stylesheet" type="text/css"/>
