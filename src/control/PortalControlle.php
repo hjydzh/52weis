@@ -31,6 +31,7 @@ class PortalControlle {
 	private static $RECOMMEND_BLOG_NUM = 18;
 	
 	public function main(){
+		error_reporting(0);
 		$service = new ArticleQueryService();
 		$hotBlogs = self::queryHotBlogs($service, self::$HOT_BLOG_NUM);
 		$newBlogs = self::getNewBlogs($service, self::$NEW_BLOG_NUM);

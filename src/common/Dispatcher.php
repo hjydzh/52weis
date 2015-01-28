@@ -28,7 +28,7 @@ class Dispatcher {
 		$realPath = $paths[$url];
 		if(empty($realPath)){
 			// 错误页面啥的
-			return;
+			header('Location:/404.html');
 		}
 		$urlInfo = self::urlParse ($realPath);
 		self::invoke ($urlInfo);
@@ -44,7 +44,7 @@ class Dispatcher {
 		try{
 		$ec->invoke ( $instance );
 		}catch(\Exception $e){
-			//print $e->getMessage();
+			print $e->getMessage();
 			header('Location:/error.html');
 		}
 	}

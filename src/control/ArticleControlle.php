@@ -24,6 +24,7 @@ class ArticleControlle {
 	private static $CATE_TWO = 2;
 	
 	public function main(){
+		error_reporting(0);
 		$id_cat = $_GET['id'];
 		$id = explode("_", $id_cat)[0];
 		$cat_id = explode("_", $id_cat)[1];

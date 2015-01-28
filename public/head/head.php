@@ -25,6 +25,7 @@ function topHtml(){
 			<a target="_blank" href="/about.html" >关于本站</a>
 		</li>
 <?php 
+error_reporting(0);
 session_start();
 
 require_once get_include_path().'/52weis/src/service/ArticleQueryService.php';

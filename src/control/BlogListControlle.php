@@ -15,9 +15,16 @@ class BlogListControlle {
 	private static $PAGE_NUM = 6;
 	
 	public function main(){
+		error_reporting(0);
 		$id = $_GET["id"];
+		if(empty($id)){
+			header('Location:/portal.html');
+		}
 		$cate_id = explode("_", $id)[0];
 		$level = explode("_", $id)[1];
+		if(empty($cate_id) || empty($level)){
+			header('Location:/portal.html');
+		}
 		$last_page = false;
 		if(!isset($_GET["index"])){
 			$index = 0;
@@ -25,7 +32,7 @@ class BlogListControlle {
 			$index = (int)$_GET["index"];
 		}
 		if($index < 0){
-			//报错;
+			header('Location:/error.html');
 		}
 		$start = self::getStartIndex($index);
 		$end = self::getEndIndex($index);
@@ -36,6 +43,8 @@ class BlogListControlle {
 		}else if(1 == $level){
 			$blogs = self::getFirstCate($service, $cate_id, $start, $end);
 			//$count = self::getFirstCateCount($service, $cate_id);
+		}else{
+			header('Location:/portal.html');
 		}
 		if(count($blogs) < self::$PAGE_NUM){
 			//当返回的数量小于一页的数量，说明已经是最后一页了，置为true，说明最后一页

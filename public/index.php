@@ -11,12 +11,16 @@ $path = $parseList['path'];
 //获得路径.html,.php等前部分
 $pathArray = explode(".", $path);
 if(empty($pathArray)){
-	header('Location:/52weis/error.html');
+	header('Location:/error.html');
 }
 $pagePath = $pathArray[0];
 
 if("/error" == $pagePath){
 	require_once get_include_path().'/52weis/public/head/error.php';
+	return;
+}
+if("/404" == $pagePath){
+	require_once get_include_path().'/52weis/public/head/404.php';
 	return;
 }
 
