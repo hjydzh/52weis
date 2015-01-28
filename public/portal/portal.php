@@ -120,14 +120,14 @@ $template = '
 				<div class="info">%s&nbsp;&nbsp;%s&nbsp;&nbsp;</div>
                 <div class="content">
                  	%s ...	
-                	<a target="_blank" class="readMore" href="/articles.html?id=%s">&nbsp;&nbsp;阅读全文</a>
+                	<a target="_blank" class="readMore" href="%s">&nbsp;&nbsp;阅读全文</a>
                 </div> 
 			</div> '
 		;    
 recommendBlogs($recomBlogs, $template)
                 ?>  
         	<div id="more">
-        		<a onclick="readMore(this)" href="####">
+        		<a onclick="readMore(this)" href="javascript:void(0)">
         			加载更多
         		</a>
         		<input type="hidden" id="read_click" value="0"/>

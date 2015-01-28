@@ -71,7 +71,7 @@ foreach($blogs as $blog){
 }
                 ?> 
         	<div id="more">
-        		<a onclick="readMore(this)" href="####">
+        		<a onclick="readMore(this)" href="javascript:void(0)">
         			加载更多
         		</a>
         		<input type="hidden" id="read_click" value="0"/>
