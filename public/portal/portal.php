@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="zh-cn">
 <head>
 <meta property="wb:webmaster" content="a8beb340f9528e14" />
 <meta charset="utf-8">

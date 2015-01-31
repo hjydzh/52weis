@@ -1,7 +1,9 @@
 <!doctype html>
-<html>
+<html lang="zh-cn">
 <head>
 <meta charset="utf-8">
+<meta name="keywords" content="程序员">
+<meta name="description" content="<?php echo $blog->title; ?>">
 <title><?php echo $blog->title; ?></title>
 <link href="/52weis/public/script/css/body/article.css" rel="stylesheet"
 	type="text/css" />
@@ -41,6 +43,24 @@ require_once get_include_path().'/52weis/public/head/head.php';
 						</ul>
 					</dd>
 					<dd class="article-content"><?php echo $blog->content; ?></dd>
+					<dd>
+							<div style="float:right"  class="bdsharebuttonbox"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+						<div style="float:right; padding:5px;" >
+							分享到：
+						</div>
+					</dd>
+					<dd>
+						<div style="float:left;">
+							<img style="width:100px" alt="微信扫一扫" src="/52weis/public/script/img/qrcode_for_gh_265ecfa7d174_430.jpg">
+						</div>
+						<div style="float:left;padding:10px;width:480px; text-align:left; line-height:25px;">
+						想第一时间获得最新文章，请在微信公众账号中搜索[<font color="#8B0000">52weis</font>]或者搜索微信号[<font color="#8B0000">ILoveWeis</font>]
+						或用手机扫描左方二维码，即可获得每日精华内容推送和最优搜索体验
+						</div>
+						<br/ style="clear: both">
+					</dd>
+
 
 				</dl>
 				<div class="next-chapter"></div>
