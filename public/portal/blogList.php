@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
 <head>
-<link rel="shortcut icon" href="../script/img/52.ico" type="image/x-icon" />
 <meta charset="utf-8">
 <title>文章分类浏览</title>
 <link href="/52weis/public/script/css/body/blogList.css" rel="stylesheet" type="text/css"/>
 <script  src="/52weis/public/script/js/jquery-1.9.1.js"></script>
+<?php
+require_once get_include_path().'/52weis/public/head/head.php';
+?>
 </head>
 <?php 
 
@@ -28,9 +30,6 @@ function tagLi($href, $name){
 }
 ?>
 <body>
-<?php 
-require_once get_include_path().'/52weis/public/head/head.php';
-?>
     <div id="wrapper">
     	<div id="main"> 
                 <?php 

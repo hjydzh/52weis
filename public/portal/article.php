@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="keywords" content="程序员">
 <meta name="description" content="<?php echo $blog->title; ?>">
+<?php
+require_once get_include_path().'/52weis/public/head/head.php';
+?>
 <title><?php echo $blog->title; ?></title>
 <link href="/52weis/public/script/css/body/article.css" rel="stylesheet"
 	type="text/css" />
 </head>
 
 <body>
-<?php
-require_once get_include_path().'/52weis/public/head/head.php';
-?>
 	<div id="body">
 		<ul id="nav">
 			<li class="nav-item"><a href="/">首页</a></li>

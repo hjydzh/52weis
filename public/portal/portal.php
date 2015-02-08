@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
+<?php 
+require_once get_include_path().'/52weis/public/head/head.php';
+?>
 <meta property="wb:webmaster" content="a8beb340f9528e14" />
 <meta charset="utf-8">
 <title>52weis</title>
@@ -21,7 +24,6 @@
 </div>
 
 <?php 
-require_once get_include_path().'/52weis/public/head/head.php';
 require_once get_include_path().'/52weis/src/common/HtmlTemplate.php';
 use \common\HtmlTemplate;
 
@@ -247,7 +249,8 @@ var wordsList = new Array(
 "我喜欢看《火影忍者》，你呢？<br>推荐你去看看哟",
 "我的网站是不是很简朴啊<br>呜呜~~~~(>_<)~~~~<br>技术不行呢,纯手工打造的呢,千万不能嫌弃啊",
 "有什么能帮到你的吗<br>告诉我好么",
-"今天我心情很好哟，开心思密达，嘻嘻"
+"今天我心情很好哟，开心思密达，嘻嘻",
+"喜欢我么，我是不是萌萌哒"
 )
 
 
