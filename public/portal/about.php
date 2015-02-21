@@ -15,9 +15,7 @@ require_once get_include_path().'/52weis/public/head/head.php';
 		<ul id="nav">
 			<li class="nav-item"><a href="/portal.html">首页</a></li>
 			<li class="nav-item">></li>
-			<li class="nav-item"><a href="<?php echo $first_category->url.'?id='.$first_category->id."_".$first_category->level?>"><?php echo $first_category->name?></a></li>
-			<li class="nav-item">></li>
-			<li class="nav-item"><a href="<?php echo $second_category->url.'?id='.$second_category->id."_".$second_category->level?>"><?php echo $second_category->name?></a></li>
+			<li class="nav-item"><a href="/portal.html">关于本站</a></li>
 			<br class="clear:both" />
 		</ul>
 		<div id="main">
