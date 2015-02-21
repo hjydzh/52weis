@@ -224,7 +224,7 @@ class ArticleQueryDao {
 		if ($stmt = mysqli_prepare ( $link, $query )) {
 			/* bind parameters for markers */
 			$num = 0;
-			$weight = 1;
+			$weight = 0;
 			mysqli_stmt_bind_param ( $stmt, "sssddsd", $blog->title, $blog->author, $blog->content, $num, $weight, $blog->url, $blog->category_id );
 			
 			/* execute query */
