@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-<?php 
-require_once get_include_path().'/52weis/public/head/head.php';
-?>
+
 <meta property="wb:webmaster" content="a8beb340f9528e14" />
 <meta charset="utf-8">
-<title>52weis</title>
+<meta name="keywords" content="程序员,精彩,文学，理财，休息，励志，企业家，互联网">
+<meta name="author" content="52weis">
+<meta name="description" content="致力于帮助程序员摆脱枯燥乏味的生活，带给他们一个更精彩的世界。，从另一个角度看世界，会有惊喜哟！快来加入我们吧">
+<title>52weis|另眼看世界</title>
 <link href="/52weis/public/script/css/body/home.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="/52weis/public/script/js/pictureAutoMove.js"></script>
- 
+<?php 
+require_once get_include_path().'/52weis/public/head/head.php';
+?> 
 </head>
 
 <body>
@@ -82,7 +85,7 @@ function hotBlogs($blogs, $template){
 	<div></div>
 	<div id="freshMessage">
 		<MARQUEE behavior="alternate" scrollAmount=1 direction=right  height=30><FONT face=微软雅黑 size=2>
-			Hi，我的小站全球内测正式开始了，不管你是中国人还是外国人，地球还是火星人，发现bug有奖(这你也信，哇哈哈)
+			Hi, 欢迎来到小微君的地盘哟。小微君将努力为你提供各类文章，帮助你提高生活品质和对生活的理解。小微君可不喜欢你是个工作狂哟。和小微君一起另眼看世界吧
 		</MARQUEE>
 	</div>
     
