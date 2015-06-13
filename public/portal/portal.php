@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="zh-cn">
 <head>
-
+<meta name="baidu-site-verification" content="H2Nn8ajsBi" />
 <meta property="wb:webmaster" content="a8beb340f9528e14" />
 <meta charset="utf-8">
-<meta name="keywords" content="程序员,精彩,文学，理财，休息，励志，企业家，互联网">
+<meta name="keywords" content="程序员,算法,java,机器学习">
 <meta name="author" content="52weis">
-<meta name="description" content="致力于帮助程序员摆脱枯燥乏味的生活，带给他们一个更精彩的世界。，从另一个角度看世界，会有惊喜哟！快来加入我们吧">
-<title>52weis|另眼看世界</title>
+<meta name="description" content="关注并热爱算法和机器学习。">
+<title>52weis|人工智能改变世界</title>
 <link href="/52weis/public/script/css/body/home.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="/52weis/public/script/js/pictureAutoMove.js"></script>
 <?php 
