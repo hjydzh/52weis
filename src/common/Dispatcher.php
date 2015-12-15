@@ -56,6 +56,7 @@ class Dispatcher {
 		$paths ["/addBlog"] = "/52weis/src/control/AddBlogControlle.php";
 		$paths ["/portal"] = "/52weis/src/control/PortalControlle.php!main";
 		$paths ["/login"] = "/52weis/src/control/LoginControlle.php";
+		$paths ["/weixin"] = "/52weis/src/control/WeixinAuthController.php";
 		return $paths;
 	}
 	private static function urlParse($url) {
