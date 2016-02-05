@@ -31,9 +31,13 @@ class PublicConstants {
 	
 	public static $ARTICLE_PATH = "/52weis/public/portal/article.php";
 	
+	public static $BLOG_PATH = "/52weis/public/portal/blog.php";
+	
 	public static $BLOG_LIST_PATH = "/52weis/public/portal/blogList.php";
 	
 	public static $ADD_BLOG_PATH = "/52weis/public/login/admin/addBlog.php";
+	
+	public static $INDEX_PATH = "/52weis/public/portal/index.php";
 	
 	/**
 	 * 

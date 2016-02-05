@@ -25,7 +25,7 @@ class Dispatcher {
 	
 	public static function doService($url) {
 		$paths = self::pathMap();
-		$realPath = $paths[$url];
+		$realPath = $paths[explode("/",$url)[1]];
 		if(empty($realPath)){
 			// 错误页面啥的
 			header('Location:/404.html');
@@ -50,13 +50,14 @@ class Dispatcher {
 	}
 	private static function pathMap() {
 		$paths = array ();
-		$paths ["/error"] = "/52weis/public/head/error.php";
-		$paths ["/list"] = "/52weis/src/control/BlogListControlle.php";
-		$paths ["/articles"] = "/52weis/src/control/ArticleControlle.php";
-		$paths ["/addBlog"] = "/52weis/src/control/AddBlogControlle.php";
-		$paths ["/portal"] = "/52weis/src/control/PortalControlle.php!main";
-		$paths ["/login"] = "/52weis/src/control/LoginControlle.php";
-		$paths ["/weixin"] = "/52weis/src/control/WeixinAuthController.php";
+		$paths ["error"] = "/52weis/public/head/error.php";
+		$paths ["list"] = "/52weis/src/control/BlogListControlle.php";
+		$paths ["articles"] = "/52weis/src/control/ArticleControlle.php";
+		$paths ["addBlog"] = "/52weis/src/control/AddBlogControlle.php";
+		$paths ["portal"] = "/52weis/src/control/PortalControlle.php!main";
+		$paths ["login"] = "/52weis/src/control/LoginControlle.php";
+		$paths ["index"] = "/52weis/src/control/IndexControlle.php!main";
+		$paths ["p"] = "/52weis/src/control/BlogControlle.php!main";
 		return $paths;
 	}
 	private static function urlParse($url) {
