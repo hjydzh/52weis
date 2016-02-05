@@ -54,6 +54,10 @@ class MyBlog {
 	 */
 	private $category_id;
 	
+	private $likes;
+	
+	private $comments;
+	
 	public function __get($property_name) {
 		if (isset ( $this->$property_name )) {
 			return ($this->$property_name);
