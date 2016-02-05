@@ -158,7 +158,7 @@ class ArticleQueryDao {
 			mysqli_stmt_execute ( $stmt );
 			
 			/* bind result variables */
-			mysqli_stmt_bind_result ( $stmt, $id, $title, $author, $content, $create_time, $view_num, $weight, $url, $category_id );
+			mysqli_stmt_bind_result ( $stmt, $id, $title, $author, $content, $create_time, $view_num, $weight, $url, $category_id,$likes,$comments );
 			
 			/* fetch value */
 			
@@ -172,7 +172,8 @@ class ArticleQueryDao {
 				$blog->view_num = $view_num;
 				$blog->weight = $weight;
 				$blog->url = $url;
-				$blog->category_id = $category_id;
+				$blog->likes = $likes;
+				$blog->comments = $comments;
 				array_push ( $blogList, $blog );
 			}
 			/* close statement */
