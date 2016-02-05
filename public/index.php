@@ -4,7 +4,7 @@ use \common\Dispatcher;
 
 $url =  $_SERVER['REQUEST_URI'];
 if('/' == $url){
-	$url = '/portal.html';
+	$url = '/index.html';
 }
 $parseList = parse_url($url);
 $path = $parseList['path'];
