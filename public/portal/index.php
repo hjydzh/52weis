@@ -11,7 +11,7 @@
   <meta name="baidu-site-verification" content="H2Nn8ajsBi">
   <meta property="wb:webmaster" content="a8beb340f9528e14">
   <meta http-equiv="mobile-agent" content="format=html5; url=http://www.52weis.com/">
-  
+  <link rel="shortcut icon" href="/52weis/public/script/img/favicon.ico" type="image/x-icon">
   <title>转瞬之夏</title>
   <meta name="csrf-param" content="authenticity_token">
 <meta name="csrf-token" content="yhgcAFPEkNp3ZuL1/reTB8Evno3BylcNSceYhkqxvVnKjTCnABsV1KuyXKiLzO0qjwfmn8PlMrnWvdSIaCPz/g==">
@@ -87,8 +87,8 @@ function createBlogs($blogs,$template){
     <div class="bottom-block">
       
       <h1>转瞬之夏</h1>
-      <h3>交流故事，沟通想法</h3>
-      <p>一个基于内容分享的社区</p>
+      <h3>每个瞬间，都值得回忆</h3>
+      <p></p>
       
 
     </div>
@@ -225,14 +225,9 @@ function createBlogs($blogs,$template){
     <p>
       <a href="http://www.52weis.com" target="_blank">关于我们</a> |
       <a target="_blank" href="/contact">联系我们</a> |
-      <a href="http://www.jianshu.com/collection/fc488cd78374" target="_blank">作者成书计划</a> |
-      <a href="http://www.jianshu.com/notebooks/547/latest" target="_blank">帮助中心</a> |
-      <a href="http://jianshucom.taobao.com/" target="_blank">简书周边</a> |
-      <a href="http://www.jianshu.com/p/cabc8fa39830">合作伙伴</a> |
-      <a href="/all/collections">专题</a> |
-      <a href="/all/notes">文章</a>
+      <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253553294'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1253553294%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
     </p>
-    <p>©2012-2017 <a href="/" target="_blank">52weis</a> /  苏ICP备14059658号 / <a key="549264633b05a3da0fbd5c99" logo_size="83x30" logo_type="realname" href="http://www.anquan.org/authenticate/cert/?site=&amp;at=realname" target="_blank"><script src="http://static.anquan.org/static/outer/js/aq_auth.js"></script><span style="display:none;" class="LOGO_aq_jsonp_wrap_" id="AQ_logo_span_init_1"><script src="https://outer.anquan.org/query_auth_status/?callback=AQ_fn_aq_auth_callback&amp;url=file:///C:/Users/junyu/Desktop/blog/index.html&amp;logo_type=realname" type="text/javascript" async="true"></script></span><span style="display:none;" class="LOGO_aq_jsonp_wrap_" id="AQ_logo_span_init_1"><script src="https://outer.anquan.org/query_auth_status/?callback=AQ_fn_aq_auth_callback&amp;url=file:///C:/Users/junyu/Desktop/blog/index.html&amp;logo_type=realname" type="text/javascript" async="true"></script></span><span style="display:none;" class="LOGO_aq_jsonp_wrap_" id="AQ_logo_span_init_1"><script src="https://outer.anquan.org/query_auth_status/?callback=AQ_fn_aq_auth_callback&amp;url=file:///C:/Users/13075038/Desktop/blog/index.html&amp;logo_type=realname" type="text/javascript" async="true"></script></span><span style="display:none;" class="LOGO_aq_jsonp_wrap_" id="AQ_logo_span_init_1"><script src="https://outer.anquan.org/query_auth_status/?callback=AQ_fn_aq_auth_callback&amp;url=file:///C:/Users/13075038/Desktop/blog/52weis.html&amp;logo_type=realname" type="text/javascript" async="true"></script></span></a></p>
+    <p>©2012-2017 <a href="/" target="_blank">52weis</a> /  苏ICP备14059658号 / 
   </div>
 
   
@@ -245,7 +240,7 @@ function createBlogs($blogs,$template){
       </div>
       <div class="modal-content">
         <div class="modal-body">
-          <p>关注我们的微信公众号，获得每日好文推荐。微信中搜索「简书」或者扫一扫下方二维码：</p>
+          <p>关注我们的微信公众号，获得每日好文推荐。微信中搜索「52weis」或者扫一扫下方二维码：</p>
           <img src="http://baijii-common.b0.upaiyun.com/logos/jianshu_wechat_qrcode.jpg" alt="Jianshu wechat qrcode">
         </div>
       </div>
