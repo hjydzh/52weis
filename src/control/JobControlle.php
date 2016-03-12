@@ -25,6 +25,7 @@ class JobControlle {
 		$days = array_reverse($days);
 		$days = array_splice($days,1);
 		$days = print_array_js($days);
+		array_pop($datas);
 		$datas = print_array_js($datas);
 		require_once get_include_path().PublicConstants::$JOB_PATH;
 	}
