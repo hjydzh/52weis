@@ -19,6 +19,12 @@ class JobControlle {
 		$start_date = $_GET["start"];
 		$end_date = $_GET["end"];
 		$key_word = $_GET["key"];
+		if(empty($end_date)){
+			$end_date = current_date(Constants::$TIME_FORMART_Y_M_D);
+		}
+		if(empty($start_date)){
+			$start_date = date_substract_date(Constants::$TIME_FORMART_Y_M_D, $end_date, 10);
+		}
 		$days = two_day_split(Constants::$TIME_FORMART_M_D,$start_date,$end_date);
 		$job_nums = query_jobs_nums_by_date_names('2016-'.end($days), $end_date, $key_word);
 		$datas = self::fill_data($job_nums,$days);
