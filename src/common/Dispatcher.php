@@ -25,10 +25,15 @@ class Dispatcher {
 	
 	public static function doService($url) {
 		$paths = self::pathMap();
-		$realPath = $paths[explode("/",$url)[1]];
+		$url_pars = explode("-",explode("/",$url)[1]);
+		$realPath = $paths[$url_pars[0]];
 		if(empty($realPath)){
 			// 错误页面啥的
 			header('Location:/404.html');
+		}
+		if(count($func) == 2){
+			$realPath = $realPath.self::$DELIMITER.$url_pars[1];
+			//echo $realPath;
 		}
 		$urlInfo = self::urlParse ($realPath);
 		self::invoke ($urlInfo);
@@ -54,10 +59,11 @@ class Dispatcher {
 		$paths ["list"] = "/52weis/src/control/BlogListControlle.php";
 		$paths ["articles"] = "/52weis/src/control/ArticleControlle.php";
 		$paths ["addBlog"] = "/52weis/src/control/AddBlogControlle.php";
-		$paths ["portal"] = "/52weis/src/control/PortalControlle.php!main";
+		$paths ["portal"] = "/52weis/src/control/PortalControlle.php";
 		$paths ["login"] = "/52weis/src/control/LoginControlle.php";
-		$paths ["index"] = "/52weis/src/control/IndexControlle.php!main";
-		$paths ["p"] = "/52weis/src/control/BlogControlle.php!main";
+		$paths ["index"] = "/52weis/src/control/IndexControlle.php";
+		$paths ["p"] = "/52weis/src/control/BlogControlle.php";
+		$paths ["job"] = "/52weis/src/control/JobControlle.php";
 		return $paths;
 	}
 	private static function urlParse($url) {

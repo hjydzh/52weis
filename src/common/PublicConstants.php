@@ -7,22 +7,22 @@ class PublicConstants {
 	/*
 	 * 
 	 */
-	public static $IP = "";
+	public static $IP = "42.96.201.101";
 	
 	/*
 	 * 数据库名
 	 */
-	public static $DATA_BASE_NAME = "";
+	public static $DATA_BASE_NAME = "www";
 	
 	/*
 	 * 数据库用户名
 	 */
-	public static $DATA_BASE_USER_NAME = "";
+	public static $DATA_BASE_USER_NAME = "www";
 	
 	/*
 	 * 数据库用户密码
 	 */
-	public static $DATA_BASE_PASSWD = "";
+	public static $DATA_BASE_PASSWD = "52logsucc";
 	
 	/**
 	 * portal.php路径
@@ -38,6 +38,8 @@ class PublicConstants {
 	public static $ADD_BLOG_PATH = "/52weis/public/login/admin/addBlog.php";
 	
 	public static $INDEX_PATH = "/52weis/public/portal/index.php";
+	
+	public static $JOB_PATH = "/52weis/public/portal/job.php";
 	
 	/**
 	 * 
