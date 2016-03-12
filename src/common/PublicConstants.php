@@ -7,22 +7,22 @@ class PublicConstants {
 	/*
 	 * 
 	 */
-	public static $IP = "42.96.201.101";
+	public static $IP = " ";
 	
 	/*
 	 * 数据库名
 	 */
-	public static $DATA_BASE_NAME = "www";
+	public static $DATA_BASE_NAME = " ";
 	
 	/*
 	 * 数据库用户名
 	 */
-	public static $DATA_BASE_USER_NAME = "www";
+	public static $DATA_BASE_USER_NAME = " ";
 	
 	/*
 	 * 数据库用户密码
 	 */
-	public static $DATA_BASE_PASSWD = "52logsucc";
+	public static $DATA_BASE_PASSWD = " ";
 	
 	/**
 	 * portal.php路径
