@@ -17,13 +17,14 @@ function query_jobs_by_date_name($start, $end, $name){
 	
 }
 
-function query_jobs_nums_by_date_name($start, $end, $name){
+function query_jobs_nums_by_date_name($start, $end, $name,$source){
 	$query = JobSql::$QUERY_JOBS_NUMS__BY_DATE_NAME.'\'%'.$name.'%\' group by PUBLISH_DATE';
 	$pars = array (
 			$start,
-			$end
+			$end,
+			$source
 	);
-	return getJobsNumsByPars("ss", $pars, $query);
+	return getJobsNumsByPars("sss", $pars, $query);
 
 }
 
@@ -112,7 +113,7 @@ function getJobsNumsByPars($type, $par, $query) {
 	/* create a prepared statement */
 	if ($stmt = mysqli_prepare ($link, $query )) {
 		/* bind parameters for markers */
-		mysqli_stmt_bind_param ( $stmt, $type, $par [0], $par [1]);
+		mysqli_stmt_bind_param ( $stmt, $type, $par [0], $par [1],$par [2]);
 		mysqli_stmt_execute ( $stmt );
 		mysqli_stmt_bind_result ( $stmt, $nums, $date);
 		while ( mysqli_stmt_fetch ( $stmt ) ) {

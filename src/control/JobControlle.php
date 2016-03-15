@@ -20,20 +20,28 @@ class JobControlle {
 		$end_date = $_GET["end"];
 		$key_word = $_GET["key"];
 		if(empty($end_date)){
-			$end_date = current_date(Constants::$TIME_FORMART_Y_M_D);
+			$end_date = yestday(Constants::$TIME_FORMART_Y_M_D);
 		}
 		if(empty($start_date)){
 			$start_date = date_substract_date(Constants::$TIME_FORMART_Y_M_D, $end_date, 10);
 		}
 		$days = two_day_split(Constants::$TIME_FORMART_M_D,$start_date,$end_date);
-		$job_nums = query_jobs_nums_by_date_names('2016-'.end($days), $end_date, $key_word);
-		$datas = self::fill_data($job_nums,$days);
+		$zl_job_nums = query_jobs_nums_by_date_names('2016-'.end($days), $end_date, $key_word, 'zl');
+		$zl_datas = self::get_datas($zl_job_nums,$days);
+		$fo_job_nums = query_jobs_nums_by_date_names('2016-'.end($days), $end_date, $key_word, '51');
+		$fo_datas = self::get_datas($fo_job_nums,$days);
 		$days = array_reverse($days);
 		$days = array_splice($days,1);
 		$days = print_array_js($days);
+		
+		require_once get_include_path().PublicConstants::$JOB_PATH;
+	}
+	
+	public function get_datas($job_nums,$days){
+		$datas = self::fill_data($job_nums,$days);
 		array_pop($datas);
 		$datas = print_array_js($datas);
-		require_once get_include_path().PublicConstants::$JOB_PATH;
+		return $datas;
 	}
 	
 	function fill_data($job_nums, $days){

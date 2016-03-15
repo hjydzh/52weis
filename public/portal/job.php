@@ -22,7 +22,7 @@
         trigger: 'axis'
     },
     legend: {
-        data:['数目','最低气温']
+        data:['智联招聘','51job']
     },
     toolbox: {
         show : true,
@@ -57,10 +57,28 @@
     ],
     series : [
         {
-            name:'数目',
+            name:'智联招聘',
             type:'line',
             data:<?php 
-            echo $datas;
+            echo $zl_datas;
+            ?>,
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+        {
+            name:'51job',
+            type:'line',
+            data:<?php 
+            echo $fo_datas;
             ?>,
             markPoint : {
                 data : [
