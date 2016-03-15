@@ -20,7 +20,7 @@ class JobControlle {
 		$end_date = $_GET["end"];
 		$key_word = $_GET["key"];
 		if(empty($end_date)){
-			$end_date = yestday(Constants::$TIME_FORMART_Y_M_D);
+			$end_date = current_date(Constants::$TIME_FORMART_Y_M_D);
 		}
 		if(empty($start_date)){
 			$start_date = date_substract_date(Constants::$TIME_FORMART_Y_M_D, $end_date, 10);
