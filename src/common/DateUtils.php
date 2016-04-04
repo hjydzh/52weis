@@ -4,6 +4,11 @@ function current_date($style){
 	return date($style,time());
 }
 
+//字符串转换成时间戳
+function str_timestamp($str){
+	return strtotime($str);
+}
+
 function add_date($style, $days){
 	return date($style,strtotime($days." day"));
 }

@@ -64,6 +64,8 @@ class Dispatcher {
 		$paths ["index"] = "/52weis/src/control/IndexControlle.php";
 		$paths ["p"] = "/52weis/src/control/BlogControlle.php";
 		$paths ["job"] = "/52weis/src/control/JobControlle.php";
+		$paths ["jian"] = "/52weis/src/control/JianControlle.php";
+		$paths ["detail"] = "/52weis/src/control/JianControlle.php!detail";
 		return $paths;
 	}
 	private static function urlParse($url) {
