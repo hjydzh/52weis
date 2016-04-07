@@ -51,7 +51,7 @@
 	    	$num = 1;
 	    	foreach ($blogs as $blog){
 				$hour = intval($blog->showTime/3600);
-				$min = round($blog->showTime%60, 1);
+				$min = round($blog->showTime%3600/60);
 				$txt = vsprintf($tr_template, array($num, $blog->url, $blog->title, $blog->author, $blog->selectedTime, $blog->time, $hour.'小时'.$min.'分',$blog->url));
 				echo $txt;
 				$num = $num + 1;
