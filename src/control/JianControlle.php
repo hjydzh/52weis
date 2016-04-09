@@ -40,8 +40,10 @@ class JianControlle {
 			return;
 		}
 		$views_array = json_to_array($view_str);
-		$time = print_array_js(array_keys($views_array));
-		$views = print_array_js(array_values($views_array));
+		$keys = array_keys($views_array);
+		$values=array_values($views_array);
+		$views = print_two_array_js($keys,$values);
+		$interval = (end($keys)-$keys[0])/10;
 		require_once get_include_path().PublicConstants::$DETAIL_PATH;
 	}
 	

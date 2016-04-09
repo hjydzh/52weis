@@ -10,6 +10,17 @@ function print_array_js($array){
 	return $s;
 }
 
+function print_two_array_js($array1,$array2){
+	$s = '';
+	$i=0;
+	foreach($array1 as $d){
+		$s = $s.'{value:['.$d.','.$array2[$i].'],symbolSize:0},';
+		$i++;
+	}
+	$s = '['.$s.']';
+	return $s;
+}
+
 function json_to_array($json_str) {  
 	$array = Array();
 	$json_array = json_decode($json_str);

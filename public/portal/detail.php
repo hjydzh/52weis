@@ -14,7 +14,7 @@
 
 </header>
 <body>
-<h1>简书首页昨天详情</h1>
+<h1>简书首页昨天详情 </h1>
 <div class="container-fluid">
 <div class="row">
 <div id="main" style="height:600px;">
@@ -29,7 +29,7 @@
 function time_formater(time){
 	 var date = new Date(time*1000);
 	 var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
-	 var D = date.getDate() + ' ';
+	 var D = date.getDate() < 10 ? '0'+date.getDate()+ ':':date.getDate()+ ':';
 	 var h = date.getHours() < 10 ? '0'+date.getHours()+ ':':date.getHours()+ ':';
 	 var m = date.getMinutes() < 10 ? '0'+date.getMinutes()+ ':':date.getMinutes()+ ':';
 	 var s = date.getSeconds() < 10 ? '0'+date.getSeconds():date.getSeconds();
@@ -46,8 +46,8 @@ var option = {
 	        trigger: 'axis',
 	        formatter:function (params){
 		        var s = "2016-";
-		        s += time_formater(params[0].name) + "<br/>";
-		        s += "阅读量 : " + params[0].data;
+		        s += time_formater(params[0].value[0]) + "<br/>";
+		        s += "阅读量 : " + params[0].value[1];
 	        	return s;
            }
 	    },
@@ -64,31 +64,37 @@ var option = {
 	            saveAsImage : {show: true}
 	        }
 	    },
+	    interval: <?php echo $interval?>,
 	    calculable : true,
 	    xAxis : [
 	        {
-	            type : 'category',
-	            boundaryGap : false,
+	            type : 'time',
+	            scale:true,
 	          	axisLabel : {
 	                formatter:function (value){
 	                	return time_formater(value);
-		           }
-	            },
-	            data : <?php echo $time?>
+		           },
+	            }
 	        }
 	    ],
 	    yAxis : [
 	        {
 	            type : 'value',
+	            scale:true,
 	            axisLabel : {
-	                formatter: '{value}'
-	            }
+	            	 formatter:function (value){
+		                	return parseInt(value);
+			           },
+	            },
+            	min:<?php echo $values[0]?>,
+                max:<?php echo end($values)*1.1?>,
 	        }
 	    ],
 	    series : [
 	        {
 	            name:'阅读量',
 	            type:'line',
+	            smooth:true,
 	            data:<?php echo $views?>
 	        }
 	    ]
