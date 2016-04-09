@@ -56,7 +56,7 @@ class JianControlle {
 	private function week_rate($date_list, $redis){
 		$week_rate = Array();
 		foreach ($date_list as $date){
-			array_push($week_rate, intval(self::query_read_rate_cache($date, $redis)[0]));
+			array_push($week_rate, intval(self::query_read_rate_cache($date, $redis)[1]));
 		}
 		return $week_rate;
 	}

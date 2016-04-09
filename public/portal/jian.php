@@ -88,7 +88,7 @@
 <div class="row">
 	<div class="col-xs-5"  style="padding:10px;">
 		<div style="border:5px #61A0A8 solid;padding:10px; ">
-		<h3 class="text-center">增长一阅读量所需时间</h3>
+		<h3 class="text-center">每小时阅读增长数</h3>
 		<div id="unitcost" style="height:360px;">
 		</div>
 		</div>
@@ -112,7 +112,7 @@
 	</div>
 	<div class="col-xs-6" style="padding:10px;">
 		<div style="border:4px #61A0A8 solid; padding:10px;">
-		<h3 class="text-center">一周增长一阅读量所需时间</h3>
+		<h3 class="text-center">一周平均每小时阅读增长数</h3>
 		<div id="weekunitcost" style="height:360px;">
 		</div>
 		</div>
@@ -323,7 +323,7 @@ var option = {
 	        {
 	            type : 'value',
 	            axisLabel : {
-	                formatter: '{value}秒'
+	                formatter: '{value}'
 	            }
 	           
 	        }
@@ -455,7 +455,7 @@ var option = {
 	        trigger: 'axis'
 	    },
 	    legend: {
-	        data:['文章停留首页时间']
+	        data:['每小时阅读增长数']
 	    },
 	    toolbox: {
 	        show : true,
@@ -476,13 +476,13 @@ var option = {
 	        {
 	            type : 'value',
 	          	axisLabel : {
-		                formatter: '{value}秒'
+		                formatter: '{value}'
 		            }
 	        }
 	    ],
 	    series : [
 	        {
-	            name:'文章停留首页时间',
+	            name:'每小时阅读增长数',
 	            type:'bar',
 	            data:<?php echo $week_rate; ?>
 	            
